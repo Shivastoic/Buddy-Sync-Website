@@ -1,0 +1,27 @@
+main {
+  flex: 100%;
+  /* Set the width of the main content */
+  background-color: black;
+  /* White background color */
+}
+
+section {
+  /* text-align: center; */
+  height: 100%;
+  padding: 75px 0px;
+  min-height: 80vh;
+  color: white;
+  /* font-family: "Euclid Circular A", "Poppins"; */
+}
+
+#sec {
+  background-image: url(Wave.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 650px;
+  /* height: 860px; */
+  position: relative;
+  overflow: hidden;
+  padding: 180px 0 80px;
+}

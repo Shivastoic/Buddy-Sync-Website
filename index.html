@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuddySync</title>
+  <link rel="shortcut icon" href="./assets/image/people-fill.svg" type="image/x-icon">
+  <!-- main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <!-- w3 css -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <!-- Fontawesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!--  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="margin-left: 5vh;"><img
+          src="./assets/logo/BuddySync_Redesigned-removebg-preview.png" id="nav-logo"></a>
+      <li class="nav-item" id="points" style="list-style: none;justify-content: end;">
+        <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-star"
+            aria-hidden="true"></i></a>
+      </li>
+
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="fa-solid fa-circle-user"
+              style="margin-right: 6px;"></i><a href="./assets/pages/login/login.html"
+              style="text-decoration: none;color: black;" target="_blank">Sign in to Continue</a></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"> <i class="fa fa-home" aria-hidden="true"></i>
+                Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./BuddySync Community/index.html" target="_blank"><i
+                  class="fa-solid fa-users-line"></i>Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./buddy code/index.html" target="_blank"><i class="fa-solid fa-code"
+                  aria-hidden="true"></i>
+                Code Catalyst</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://dev7083.github.io/CatalystBlog/" target="_blank"><i
+                  class="fa-solid fa-b" aria-hidden="true"></i>
+                BuddyBlog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./moral/index.html" target="_blank"><i class="fa-solid fa-brain"></i>Moral</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Expense/index.html" target="_blank"><i
+                  class="fa-solid fa-dollar-sign"></i>Expense Tracker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resources"><i class="fa-brands fa-github" aria-hidden="true"></i>
+                Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><i class="fa-solid fa-graduation-cap"></i>Career</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href=""><i class="fa-solid fa-plane"></i>Tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><i class="fa-solid fa-burger"></i>Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""> <i class="fa-solid fa-phone"></i>Contact US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" download="CollegeBuddy" target="_blank"><i class="fa-solid fa-download"
+                  style="margin: 1%;"></i>Download APK</a>
+            </li>
+            <!-- Search -->
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="intro">
+      <div id="hero-area" class="hero-area-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+              <div class="contents">
+                <h2 class="cb-head">BuddySync </h2>
+                <p>
+                <h4>Hey <span style="color: coral;">Buddy</span>, lets Sync.</h4>
+                <br>
+                <h5>We help you navigate through
+                  your college life.</h5>
+
+                <div class="header-button" data-aos="fade-right" data-aos-duration="2000">
+
+                  <a href="https://www.linkedin.com/groups/9206025/" target="_blank" class="btn btn-dark">
+                    <i class="fab fa-linkedin"></i>&nbsp; &nbsp;
+                    Join
+                    Now</i></a>
+                  <a href="#resources" class="btn btn-outline-warning btn-common video-popup">
+                    <i class=" fa fa-sharp fa-solid fa-graduation-cap"></i>Learn
+                    More</i></a>
+                  <a href="./assets/apk/Buddysync.apk" download="CollegeBuddy APK" target="_blank"
+                    class="btn btn-dark btn-common video-popup">
+                    <i class=" fa fa-sharp fa-solid fa-download fa-fade"></i>Download APK</a>
+                </div>
+
+
+                <br>Join the <span style="color: coral;"><b>LinkedIn</b></span> page for interaction with developers
+                from all over India.
+
+
+                </p>
+                <br>
+
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+              <div class="intro-img">
+                <img class="img-fluid" src="./assets/image/8531859.png" alt="Introduction mobile picture">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="resources">
+      <h2 class="cb-head" style="color: black;display: flex;justify-content: center;">Resources </h2>
+      <div class="container" style="display: flex;justify-content: center;">
+
+        <div class="card" style="width: 18rem; margin: 1vh 1vh 1vh 1vh;">
+          <img class="card-img-top" src="assets/image/note-sticky-solid.svg" alt="Card image cap">
+
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Notes</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary" style="justify-content: center;">Expand</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;margin: 1vh 1vh 1vh 1vh;">
+          <img class="card-img-top" src="assets/image/book-open-reader-solid.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">PYQs</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Expand</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; margin: 1vh 1vh 1vh 1vh;">
+          <img class="card-img-top" src="assets/image/code-solid.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Coding</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Expand</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Career -->
+    <section>
+      <h2 class="cb-head" style="color: whitesmoke;display: flex;justify-content: center;">Career </h2>
+      <div class="container" style="display: flex;justify-content: center;">
+
+        <div class="card" style="width: 18rem; margin: 1vh 1vh 1vh 1vh;">
+          <img class="card-img-top" src="assets/image/note-sticky-solid.svg" alt="Card image cap">
+
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Interview Guide</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary" style="justify-content: center;">Expand</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;margin: 1vh 1vh 1vh 1vh;">
+          <img class="card-img-top" src="assets/image/book-open-reader-solid.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Social SKills</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Expand</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; margin: 1vh 1vh 1vh 1vh;">
+          <img class="card-img-top" src="assets/image/code-solid.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Get Certified</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Expand</a>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="cb-head w3-padding-64" style="color: whitesmoke;display: flex;justify-content: center;">Events</h2>
+      <div class="container" style="display: flex;justify-content: center;">
+        <div class="card text-center">
+          <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Workshops</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Seminar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">BootCamps</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">2-Day JAVA Workshop</h5>
+            <p class="card-text">Master your Java Skills.</p>
+            <!-- <a href="#" class="btn btn-primary"><i class="fa-solid fa-link"></i></a> -->
+
+            <!-- modal -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-solid fa-link" style="width: 100px;"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">JAVA Workshop</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p style="margin: 2px 2px 2px 2px;text-align: left;">
+                      Java is one of the most popular and versatile programming languages in the world. It can be used
+                      to create applications for web, mobile, desktop, and embedded systems. Java is also a powerful
+                      tool for solving real-world problems, such as data analysis, web development, cryptography, and
+                      artificial intelligence.
+                      <br><br>
+                      In this class, you will learn the fundamentals of Java programming, such as variables, data types,
+                      operators, control structures, arrays, and methods. You will also learn how to use object-oriented
+                      and functional programming paradigms to design and implement modular and reusable code. You will
+                      explore some of the most useful features of Java, such as regular expressions, collections,
+                      streams, generics, exceptions, concurrency, and lambda expressions. You will also learn how to
+                      work with databases using JDBC, make HTTP requests and parse JSON data, secure your data with
+                      encryption and hashing algorithms, and write unit tests with JUnit.
+                      <br><br>
+                      This class is designed for beginners who want to learn Java from scratch, as well as intermediate
+                      programmers who want to improve their skills and knowledge. You will learn by doing practical
+                      exercises and projects that will help you apply what you learn to real-world scenarios. You will
+                      also get feedback and guidance from experienced instructors who will help you overcome any
+                      challenges you might face along the way.
+                      <br><br>
+                      By the end of this class, you will have a solid foundation in Java programming and be able to
+                      create high-performance applications that work flawlessly within the JVM across web, mobile and
+                      desktop. You will also have a portfolio of projects that demonstrate your skills and creativity as
+                      a Java developer.
+                      <br><br>
+                      <b>If you are ready to start your journey with Java, enroll in this class today and get access to
+                        all the resources you need to succeed.</b>
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                    <button type="button" class="btn btn-primary">Enroll</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal close -->
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- testimonials -->
+    <section style="margin: 20px 20px 20px 20px;">
+      <h2 class="cb-head" style="color: black;display: flex;justify-content: center;">Testimonials </h2>
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">11+</span><br>
+          Partners
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">55+</span><br>
+          Colleges Approached
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">89+</span><br>
+          Happy Clients
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">150+</span><br>
+          Seminars
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact US</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <div class="w3-section">
+          <p>
+            <i class="fa-solid fa-location-dot fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+            Prayagraj, India
+          </p>
+          <p>
+            <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+            Phone: +91 9369787440
+          </p>
+          <p>
+            <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right">
+            </i>
+            Email: CollegeBuddy@gmail.com
+          </p>
+        </div>
+        <br />
+        <p>Let's get in touch. Send us a message:</p>
+
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name" />
+          </p>
+          <p>
+            <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email" />
+          </p>
+          <p>
+            <input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject" />
+          </p>
+          <p>
+            <input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message" />
+          </p>
+          <p>
+            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+        <!-- End Contact Section -->
+      </div>
+    </section>
+    <!-- Footer -->
+    <section id="footer-final">
+      <footer class="top">
+        <div class="links">
+          <div class="links-column">
+            <h2>Get Started</h2>
+            <a>Home</a>
+            <a>Documentation</a>
+            <a>Usage</a>
+            <a>Events</a>
+            <a>Team</a>
+          </div>
+          <div class="links-column">
+            <h2>Resources</h2>
+            <a>API</a>
+            <a>Volunteer group</a>
+            <a>Testimonials</a>
+            <a>Community</a>
+            <a>Marketplace</a>
+          </div>
+          <div class="links-column socials-column">
+            <h2>Social Media</h2>
+            <p>
+              Follow us on social media to find out the latest updates on our
+              progress.
+            </p>
+            <div class="socials">
+              <a class="fa-brands fa-facebook"></a>
+              <a class="fa-brands fa-instagram" href="https://www.instagram.com/" target="_blank"></a>
+              <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/" target="_blank"></a>
+              <a class="fa-brands fa-github" href="https://www.github.com/" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer class="bottom">
+        <p class="copyright">© 2023 CollegeBuddy All rights reserved</p>
+        <div class="legal">
+          <a> License </a>
+          <a> Terms </a>
+          <a> Privacy </a>
+        </div>
+      </footer>
+    </section>
+  </main>
+  <!-- back to top btn -->
+  <button type="button" class="btn btn-dark btn-xs" id="btn-back-to-top" style="display: block;">
+    <i class="fas fa-arrow-circle-up"></i>
+  </button>
+  <style>
+    #btn-back-to-top {
+      position: fixed;
+      bottom: 40px;
+      size: 10px;
+      right: 10px;
+      display: none;
+      color: rgb(224, 228, 228);
+    }
+
+    #btn-back-to-top:hover {
+      background-color: azure;
+    }
+
+    #btn-back-to-top:hover i {
+      color: #292825;
+    }
+  </style>
+  <!-- Back to top button -->
+  <script>
+    //Get the button
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 0 ||
+        document.documentElement.scrollTop > 0
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

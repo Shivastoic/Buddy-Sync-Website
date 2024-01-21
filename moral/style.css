@@ -1,0 +1,166 @@
+body {
+  font-family: "Euclid Circular A", "Poppins";
+}
+main {
+  flex: 100%;
+  /* Set the width of the main content */
+  background-color: black;
+  /* White background color */
+}
+
+/* every even section with grey color */
+section:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+section {
+  /* text-align: center; */
+  height: 100vh;
+  padding: 75px 0px;
+  min-height: 80vh;
+  color: white;
+  font-family: "Euclid Circular A", "Poppins";
+}
+.Hi {
+  margin-top: 50vh;
+  margin-left: 5vh;
+  font-size: 10vh;
+}
+.name {
+  margin-top: 2vh;
+  margin-left: 5vh;
+  font-size: 10vh;
+}
+img {
+  /* border-radius: 50%; */
+  width: 200px;
+  height: 200px;
+}
+section.intro > img {
+  height: 500px;
+  width: 500px;
+  margin: 15vh 15vh;
+  float: right;
+  opacity: 0.8;
+}
+
+section#Skills > ul > li,
+section#Projects > div.projects > ul > li {
+  margin-top: 5vh;
+}
+
+@media (max-width: 640px) {
+  section.intro > img {
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (max-width: 840px) {
+  section.intro > img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+i {
+  margin: 6px;
+  padding: 2px 2px 2px 2px;
+}
+
+/* .intro {
+    background-image: url(/assets/image/Wave.svg);
+  } */
+
+.intro-img {
+  cursor: pointer;
+}
+#hero-area {
+  background-image: url(/assets/image/Wave.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 650px;
+  /* height: 860px; */
+  position: relative;
+  overflow: hidden;
+  padding: 180px 0 80px;
+}
+
+#hero-area .contents .head-title {
+  color: #222222;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+
+#hero-area .contents .header-button {
+  margin-top: 20px;
+  color: #222222;
+}
+
+#hero-area .contents .header-button .btn {
+  margin-right: 10px;
+}
+
+#hero-area .img-fluid {
+  position: relative;
+  bottom: 28px;
+  zoom: 1.5;
+}
+
+section.intro {
+  background-color: #0e2a47;
+}
+
+.cb-head {
+  font-size: 38px;
+  color: #fffbfb;
+  font-weight: 700;
+  font-family: "Euclid Circular A", "Poppins";
+  margin-bottom: 20px;
+}
+.card-img-top {
+  /* margin: 2px; */
+  /* margin-left: 10px; */
+  /* padding: 20px 20px 20px 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-height: 10rem; */
+  height: 150px;
+}
+div.card-body > a.btn.btn-primary {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 2rem;
+}
+
+#nav-logo {
+  border-radius: 0%;
+  height: 50px;
+  width: 100%;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  width: 90%;
+}
+
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
+.nav-item {
+  list-style: none;
+}
+.title {
+  color: #f7f7f7;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
